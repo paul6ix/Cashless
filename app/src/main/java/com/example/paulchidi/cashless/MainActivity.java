@@ -25,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
 
                 case R.id.navigation_help:
                     android.support.v4.app.Fragment helpfragment = new HelpFragment();
-                    FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                    fragmentTransaction.replace(R.id.content, helpfragment);
-                    fragmentTransaction.commit();
+                    FragmentTransaction helpfragmentTransaction = getSupportFragmentManager().beginTransaction();
+                    helpfragmentTransaction.replace(R.id.content, helpfragment);
+                    helpfragmentTransaction.commit();
                     return true;
 
                 case R.id.navigation_notifications:
