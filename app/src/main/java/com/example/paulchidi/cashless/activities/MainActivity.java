@@ -1,4 +1,4 @@
-package com.example.paulchidi.cashless;
+package com.example.paulchidi.cashless.activities;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -6,6 +6,10 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+
+import com.example.paulchidi.cashless.R;
+import com.example.paulchidi.cashless.fragments.HelpFragment;
+import com.example.paulchidi.cashless.fragments.HomeFragment;
 
 public class MainActivity extends AppCompatActivity {
 

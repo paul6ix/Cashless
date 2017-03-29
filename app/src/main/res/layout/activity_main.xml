@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.paulchidi.cashless.MainActivity">
+    tools:context="com.example.paulchidi.cashless.activities.MainActivity">
 
     <FrameLayout
         android:id="@+id/content"

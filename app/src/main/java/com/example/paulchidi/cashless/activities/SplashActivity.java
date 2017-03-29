@@ -1,14 +1,10 @@
-package com.example.paulchidi.cashless;
+package com.example.paulchidi.cashless.activities;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.os.Handler;
-import android.view.MotionEvent;
-import android.view.View;
+
+import com.example.paulchidi.cashless.R;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
