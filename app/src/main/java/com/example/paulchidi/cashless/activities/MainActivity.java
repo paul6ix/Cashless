@@ -12,6 +12,7 @@ import com.example.paulchidi.cashless.fragments.HelpFragment;
 import com.example.paulchidi.cashless.fragments.HomeFragment;
 
 public class MainActivity extends AppCompatActivity {
+    BottomNavigationView navigation;
 
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -35,10 +36,13 @@ public class MainActivity extends AppCompatActivity {
                     return true;
 
                 case R.id.navigation_notifications:
+                    return true;
 
                 case R.id.navigation_settings:
+                    return true;
 
                 case R.id.navigation_account:
+                    return true;
 
             }
             return false;
@@ -52,13 +56,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-        android.support.v4.app.Fragment fragment = new HomeFragment();
-        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.content, fragment);
-        fragmentTransaction.commit();
+        android.support.v4.app.Fragment homefragment = new HomeFragment();
+        FragmentTransaction homefragmentTransaction = getSupportFragmentManager().beginTransaction();
+        homefragmentTransaction.replace(R.id.content, homefragment);
+        homefragmentTransaction.commit();
     }
 
 }
