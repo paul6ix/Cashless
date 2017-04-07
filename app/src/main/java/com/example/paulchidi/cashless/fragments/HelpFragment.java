@@ -16,6 +16,7 @@ import com.example.paulchidi.cashless.R;
 public class HelpFragment extends Fragment {
 
 
+
     public HelpFragment() {
         // Required empty public constructor
     }
@@ -26,6 +27,9 @@ public class HelpFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_help, container, false);
+
+
     }
+
 
 }
