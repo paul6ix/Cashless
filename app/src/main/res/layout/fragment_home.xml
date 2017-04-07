@@ -13,6 +13,7 @@
 
         <ImageButton
             android:id="@+id/imageButton_ScanQr"
+            style="@android:style/Widget.Holo.ImageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -21,10 +22,108 @@
             android:layout_marginLeft="59dp"
             android:layout_marginStart="59dp"
             android:layout_marginTop="58dp"
-            android:contentDescription="Scanner Image"
-            app:srcCompat="@drawable/ic_search_black_24dp"
 
-            />
+            android:background="@android:color/white"
+            android:contentDescription="Scanner Image"
+            app:srcCompat="@drawable/search_48" />
+
+        <ImageButton
+            android:id="@+id/imageButton_GenQr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imageButton_ScanQr"
+            android:layout_marginEnd="95dp"
+            android:layout_marginRight="95dp"
+            android:background="@android:color/white"
+            android:contentDescription="Generate Barcode"
+            app:srcCompat="@drawable/qr_code_64" />
+
+        <ImageButton
+            android:id="@+id/imageButton_CheckBal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageButton_ScanQr"
+            android:layout_alignStart="@+id/imageButton_ScanQr"
+            android:layout_below="@+id/imageButton_GenQr"
+            android:layout_marginTop="53dp"
+            app:srcCompat="@drawable/coins_48" />
+
+        <ImageButton
+            android:id="@+id/imageButton_PayBills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imageButton_GenQr"
+            android:layout_alignRight="@+id/imageButton_GenQr"
+            android:layout_alignTop="@+id/imageButton_CheckBal"
+            app:srcCompat="@drawable/bill_48" />
+
+        <ImageButton
+            android:id="@+id/imageButton_Transfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageButton_CheckBal"
+            android:layout_alignStart="@+id/imageButton_CheckBal"
+            android:layout_below="@+id/imageButton_CheckBal"
+            android:layout_marginTop="46dp"
+            app:srcCompat="@drawable/transfer_between_users_50" />
+
+        <ImageButton
+            android:id="@+id/imageButton_BuyAirtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageButton_PayBills"
+            android:layout_alignStart="@+id/imageButton_PayBills"
+            android:layout_alignTop="@+id/imageButton_Transfer"
+            app:srcCompat="@drawable/cell_phone_48" />
+
+        <ImageButton
+            android:id="@+id/imageButton_ManageCards"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageButton_Transfer"
+            android:layout_alignStart="@+id/imageButton_Transfer"
+            android:layout_below="@+id/imageButton_Transfer"
+            android:layout_marginTop="53dp"
+            app:srcCompat="@drawable/bank_cards_50" />
+
+        <ImageButton
+            android:id="@+id/imageButton_Exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageButton_BuyAirtime"
+            android:layout_alignStart="@+id/imageButton_BuyAirtime"
+            android:layout_alignTop="@+id/imageButton_ManageCards"
+            app:srcCompat="@drawable/exit_50" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:text="Scan Payment"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/imageButton_GenQr"
+            android:layout_marginEnd="64dp"
+            android:layout_marginRight="64dp"
+            android:layout_marginTop="12dp"
+            android:text="Make Payment"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorPrimary" />
 
     </RelativeLayout>
 
