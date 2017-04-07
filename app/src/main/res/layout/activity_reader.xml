@@ -3,10 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
     tools:context="com.example.paulchidi.cashless.activities.ReaderActivity">
-=======
-    tools:context="com.example.paulchidi.cashless.ReaderActivity">
->>>>>>> origin/master
+
 
 </android.support.constraint.ConstraintLayout>

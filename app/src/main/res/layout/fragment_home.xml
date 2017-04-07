@@ -25,7 +25,6 @@
 
             android:background="@android:color/white"
             android:contentDescription="Scanner Image"
-            android:onClick="onClick"
             app:srcCompat="@drawable/search_48" />
 
         <ImageButton
