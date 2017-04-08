@@ -13,4 +13,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello home fragment</string>
     <string name="help_fragment">Hello Help fragment</string>
+    <string name="text_generate">Generate Qr Code</string>
+    <string name="text_button_gen">Generate Code</string>
+    <string name="text_image_desc">Qr Code View</string>
 </resources>

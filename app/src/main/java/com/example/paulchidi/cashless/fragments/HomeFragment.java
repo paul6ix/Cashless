@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 
 import com.example.paulchidi.cashless.R;
+import com.example.paulchidi.cashless.activities.GeneratorActivity;
 import com.example.paulchidi.cashless.activities.ReaderActivity;
 
 
@@ -28,6 +29,15 @@ public class HomeFragment extends Fragment {
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), ReaderActivity.class);
                 startActivity(intent);
+            }
+        });
+        ImageButton GenQrButton = (ImageButton) v.findViewById(R.id.imageButton_GenQr);
+        GenQrButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), GeneratorActivity.class);
+                startActivity(intent);
+
             }
         });
         return v;
