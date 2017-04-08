@@ -16,4 +16,15 @@
     <string name="text_generate">Generate Qr Code</string>
     <string name="text_button_gen">Generate Code</string>
     <string name="text_image_desc">Qr Code View</string>
+    <string name="text_textview_scanpayment">Scan Payment</string>
+    <string name="text_textview_checkbalance">Check Balance</string>
+    <string name="text_textview_transfer">Transfer</string>
+    <string name="text_textview_managecards">Manage Cards</string>
+    <string name="text_textview_paybills">Pay Bills</string>
+    <string name="text_textview_BuyAirtime">Buy Airtime</string>
+    <string name="text_textview_Exit">Exit</string>
+    <string name="hint_editext_acct">Enter Account Number</string>
+    <string name="hint_edittext_acctname">Enter Account Name</string>
+    <string name="hint_edittext_amount">Enter Amount</string>
+    <string name="text_msg_succesful">Qr code generated Successfully</string>
 </resources>

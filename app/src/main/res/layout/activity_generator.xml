@@ -5,39 +5,49 @@
     android:layout_height="match_parent"
     tools:context="com.example.paulchidi.cashless.activities.GeneratorActivity">
 
-    <TextView
-        android:id="@+id/textView_generate"
+    <EditText
+        android:id="@+id/editText_amount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="106dp"
-        android:layout_marginStart="106dp"
-        android:layout_marginTop="13dp"
-        android:text="@string/text_generate"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title"
-        android:textColor="@color/colorPrimary" />
+        android:layout_alignLeft="@+id/editText_accountname"
+        android:layout_alignStart="@+id/editText_accountname"
+        android:layout_below="@+id/editText_accountname"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="@string/hint_edittext_amount"
+        android:inputType="number"
+        android:singleLine="true" />
 
     <EditText
-        android:id="@+id/editText_generate"
+        android:id="@+id/editText_accountname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView_generate"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:inputType="text"
-        android:text="Name"
+        android:hint="@string/hint_edittext_acctname"
+        android:inputType="textPersonName"
         android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/editText_accountnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_amount"
+        android:layout_alignStart="@+id/editText_amount"
+        android:layout_below="@+id/editText_amount"
+        android:ems="10"
+        android:hint="@string/hint_editext_acct"
+        android:inputType="number"
+        android:maxLength="10" />
 
     <Button
         android:id="@+id/button_generate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText_generate"
+        android:layout_above="@+id/imageView_QrCode"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="26dp"
+        android:layout_marginBottom="17dp"
         android:text="@string/text_button_gen"
         android:textAppearance="@style/TextAppearance.AppCompat.Button"
         android:textColor="@color/colorPrimary" />
@@ -48,6 +58,6 @@
         android:layout_height="500px"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="40dp"
         android:contentDescription="@string/text_image_desc" />
+
 </RelativeLayout>

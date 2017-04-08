@@ -3,6 +3,7 @@
     package="com.example.paulchidi.cashless">
 
     <application
+
         android:allowBackup="true"
         android:icon="@drawable/cashless_logo"
         android:label="@string/app_name"
@@ -16,6 +17,7 @@
             android:name=".activities.SplashActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
+            android:screenOrientation="portrait"
             android:theme="@style/FullscreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +26,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.ReaderActivity" />
-        <activity android:name=".activities.GeneratorActivity"></activity>
+        <activity
+            android:name=".activities.GeneratorActivity"
+            android:label="@string/text_generate"></activity>
     </application>
 
 </manifest>
